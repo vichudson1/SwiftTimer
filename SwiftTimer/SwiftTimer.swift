@@ -22,7 +22,7 @@ public class SwiftTimer: NSObject {
 	init(timeInterval: NSTimeInterval, userInfo: [String: AnyObject]?, repeats: Bool, timerAction: () -> Void){
 		super.init()
 		self.timerAction = timerAction
-		self.timer = NSTimer.scheduledTimerWithTimeInterval(0.03,
+		self.timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval,
 		                                                    target: self,
 		                                                    selector: #selector(self.theSelector(_:)),
 		                                                    userInfo: userInfo,
