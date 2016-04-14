@@ -7,11 +7,7 @@ Use SwiftTimer for the most part like you would use NSTimer. The notable excepti
 
 Create a timer:
 
-`self.timer = SwiftTimer(timeInterval: 0.01, userInfo: nil, repeats: true) {`
-
-	`// Do your stuff here.`
-	
-`}`
+`self.timer = SwiftTimer(timeInterval: 0.01, userInfo: nil, repeats: true) {        // Do your stuff here`        }`
 
 Fire off the timer:
 
