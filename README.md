@@ -8,8 +8,10 @@ Use SwiftTimer for the most part like you would use NSTimer. The notable excepti
 Create a timer:
 
 ``` swift
-self.timer = SwiftTimer(timeInterval: 0.01, userInfo: nil, repeats: true) {        
-// Do your stuff here    
+self.timer = SwiftTimer(timeInterval: 0.01, userInfo: nil, repeats: true) {   [unowned self] timer in     
+ // Do your stuff here    
+// Access the timer instance and the userInfo dictionary
+if let dictionary = timer.userInfo {....}
 }
  ```
 Fire off the timer:
